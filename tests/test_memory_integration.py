@@ -279,7 +279,6 @@ async def test_memory_degraded_mode():
 @pytest.mark.asyncio
 async def test_context_request_timeout():
     """Тест обработки таймаута контекста в UserSessionActor"""
-    from config.settings import STM_CONTEXT_REQUEST_TIMEOUT
     
     # Временно устанавливаем короткий таймаут
     import config.settings
